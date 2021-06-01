@@ -1,0 +1,88 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+
+    <record model="ir.ui.view" id="toka2.order_list_view">
+      <field name="name">tokan2 list</field>
+      <field name="model">toka2.order</field>
+      <field name="arch" type="xml">
+        <tree>
+         <field name="name"/>
+          <field name="date"/>
+          <field name="model_2"/>
+        </tree>
+      </field>
+    </record>
+
+      
+    <record model="ir.ui.view" id="toka2.order_calendar_view">
+      <field name="name">toka2 list</field>
+      <field name="model">toka2.order</field>
+      <field name="arch" type="xml">
+    <calendar date_start="date" string="Order calendar">
+       <field name="name"/>
+    </calendar>    
+      </field>
+    </record>
+
+ <!-- new -->
+
+    <record model="ir.ui.view" id="toka2.order_form_view">
+      <field name="name">toka2 form</field>
+      <field name="model">toka2.order</field>
+      <field name="arch" type="xml">
+        <form>
+         <header>
+           <button name="%(change_date_wizard_action)d" type="action" string="Duplicate Record"  />
+           </header> 
+           <sheet>
+              <h2>
+              <field name="name"/>
+              </h2>
+          <group>
+          <field name="name"/>
+          <field name="partner"/>
+          <field name="date"/>
+          <field name="model_2"/>
+          </group>
+          </sheet>
+          </form>
+      </field>
+    </record>
+
+
+
+
+
+
+
+    <!-- actions opening views on models -->
+
+    <record model="ir.actions.act_window" id="toka2.action_window_order">
+      <field name="name">toka2 window</field>
+      <field name="res_model">toka2.order</field>
+      <field name="view_mode">tree,kanban,calendar,form</field>
+    </record>
+
+    <!-- server action to the one above -->
+
+    
+    <!-- Top menu item -->
+
+    <menuitem name="toka2" id="toka2.menu_root"/>
+
+    <!-- menu categories -->
+
+    <menuitem name="Menu 1" id="toka2.menu_1" parent="toka2.menu_root"/>
+    
+
+    <!-- actions -->
+
+    <menuitem name="List Model 3" id="toka2.menu_3_list" parent="toka2.menu_1"
+              action="toka2.action_window_order"/>
+    
+
+  </data>
+</odoo>
+
+

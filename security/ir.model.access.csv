@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_toka2_toka2,toka2.toka2,model_toka2_basic_model1,base.group_user,1,1,1,1
+access_toka2_toka22,toka2.toka22,model_toka2_basic_model2,base.group_user,1,1,1,1
+access_toka2_toka23,toka2.toka23,model_toka2_order,base.group_user,1,1,1,1
+access_toka2_change_date_wizard,access_toka2_change_date_wizard,model_toka2_change_date_wizard,base.group_user,1,1,1,1
+
+
