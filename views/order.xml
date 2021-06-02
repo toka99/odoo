@@ -27,7 +27,7 @@
 
  <!-- new -->
 
-    <record model="ir.ui.view" id="toka2.order_form_view">
+    <record model="ir.ui.view" id="toka2_order_form_view">
       <field name="name">toka2 form</field>
       <field name="model">toka2.order</field>
       <field name="arch" type="xml">

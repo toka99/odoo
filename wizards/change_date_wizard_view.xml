@@ -29,7 +29,7 @@
       <field name="res_model">toka2.change.date.wizard</field>
       <field name="view_mode">form</field>
       <field name="target">new</field>
-      <field name="binding_model_id" ref="model_toka2_change_date_wizard"/>
+     
     </record>
     </data>
     </odoo>
